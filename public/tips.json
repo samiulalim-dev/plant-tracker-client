@@ -1,0 +1,32 @@
+[
+  {
+    "icon": "💧",
+    "title": "Water Smartly",
+    "text": "Always check soil moisture before watering."
+  },
+  {
+    "icon": "🌤️",
+    "title": "Sunlight",
+    "text": "Keep your plant near a bright window but avoid harsh direct rays."
+  },
+  {
+    "icon": "🧽",
+    "title": "Clean Leaves",
+    "text": "Wipe leaves gently to help photosynthesis and keep pests away."
+  },
+  {
+    "icon": "🌱",
+    "title": "Rotate Plants",
+    "text": "Rotate your plant weekly for even growth."
+  },
+  {
+    "icon": "🌾",
+    "title": "Fertilize",
+    "text": "Use fertilizer monthly during the growing season for healthy plants."
+  },
+  {
+    "icon": "💠",
+    "title": "Check for Pests",
+    "text": "Regularly inspect plants for insects and treat early."
+  }
+]

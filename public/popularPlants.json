@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Snake Plant",
+    "image": "https://i.postimg.cc/157CdNpM/snake.jpg",
+    "difficulty": "Very Easy",
+    "tip": "Water every 2-3 weeks and keep in indirect light."
+  },
+  {
+    "name": "Spider Plant",
+    "image": "https://i.postimg.cc/7h611mQ4/spider.jpg",
+    "difficulty": "Easy",
+    "tip": "Thrives in bright, indirect light. Water weekly."
+  },
+  {
+    "name": "Aloe Vera",
+    "image": "https://i.postimg.cc/1RjDh0jg/aloevera.jpg",
+    "difficulty": "Easy",
+    "tip": "Water deeply but infrequently. Loves sunny windows."
+  },
+  {
+    "name": "Pothos",
+    "image": "https://i.postimg.cc/26XLYm2p/pothos.jpg",
+    "difficulty": "Very Easy",
+    "tip": "Can grow in low light. Water when soil is dry."
+  },
+  {
+    "name": "ZZ Plant",
+    "image": "https://i.postimg.cc/q71zc4ft/zz.jpg",
+    "difficulty": "Very Easy",
+    "tip": "Tolerates low light and irregular watering."
+  },
+  {
+    "name": "Geranium",
+    "image": "https://i.postimg.cc/rF25g1Z5/geranium.jpg",
+    "difficulty": "Very Easy",
+    "tip": "Tolerates low light and irregular watering."
+  }
+]
