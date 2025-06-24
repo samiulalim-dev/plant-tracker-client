@@ -30,6 +30,24 @@ PlantCare is a smart plant management web application where users can keep track
 
 ---
 
+## 🚀 Run Locally
+
+To run this project on your local machine, follow these steps:
+
+1. **Clone the repository**
+
+git clone: https://github.com/samiulalim-dev/plant-tracker-client.git
+
+2. **Navigate to the project directory**
+- **cd plant-tracker**
+3. **Install dependencies**
+- **npm install**
+4. **Start the development server**
+- **npm run dev**
+4. **Open your browser and visit**
+- **http://localhost:5173**
+
+
 ## 📸 Screenshots
 
 ### 🌿 Home Page
