@@ -68,4 +68,4 @@ git clone: https://github.com/samiulalim-dev/plant-tracker-client.git
 
 ## Developed by: [Samiul Alim]
 
-📧 Email:samiul@alim.com
+📧 Email:samiulalim.dev@gmail.com
