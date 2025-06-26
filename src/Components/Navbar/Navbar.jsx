@@ -92,6 +92,18 @@ const Navbar = () => {
                   Add Plant
                 </NavLink>
               </li>
+              {users && (
+                <li>
+                  <NavLink
+                    to="/dashboard"
+                    className={({ isActive }) =>
+                      isActive ? "text-green-600 underline" : ""
+                    }
+                  >
+                    Dashboard
+                  </NavLink>
+                </li>
+              )}
             </ul>
           </div>
           <Link className="flex items-center font-semibold gap-0 md:gap-2 text-lg md:text-2xl">

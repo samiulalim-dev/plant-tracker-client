@@ -9,7 +9,7 @@ const Dashboard = () => {
     <div className="drawer lg:drawer-open">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
       <div className="drawer-content mx-5 mt-5">
-        <div className="navbar bg-base-300 w-full">
+        <div className="navbar lg:hidden mb-4 bg-base-300 w-full">
           <div className="flex-none lg:hidden">
             <label
               htmlFor="my-drawer-3"
@@ -39,10 +39,54 @@ const Dashboard = () => {
             <ul className="menu menu-horizontal">
               {/* Navbar menu content here */}
               <li>
-                <a>Navbar Item 1</a>
+                <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                    isActive ? "underline text-lime-600" : "text-black"
+                  }
+                >
+                  <FaHome className="inline mr-2" /> Home
+                </NavLink>
               </li>
               <li>
-                <a>Navbar Item 2</a>
+                <NavLink
+                  to="/dashboard/overView"
+                  className={({ isActive }) =>
+                    isActive ? "underline text-lime-600" : "text-black"
+                  }
+                >
+                  <FaHome className="inline mr-2" /> Overview
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/dashboard/all-Plants"
+                  className={({ isActive }) =>
+                    isActive ? "underline text-lime-600" : "text-black"
+                  }
+                >
+                  <FaLeaf className="inline mr-2" /> All Plants
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/dashboard/my-Plants"
+                  className={({ isActive }) =>
+                    isActive ? "underline text-lime-600" : "text-black"
+                  }
+                >
+                  <FaSeedling className="inline mr-2" /> My Plants
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/dashboard/add-Plant"
+                  className={({ isActive }) =>
+                    isActive ? "underline text-lime-600" : "text-black"
+                  }
+                >
+                  <FaPlusCircle className="inline mr-2" /> Add Plant
+                </NavLink>
               </li>
             </ul>
           </div>
@@ -66,10 +110,54 @@ const Dashboard = () => {
             <ul className="menu bg-base-200 min-h-full w-80 p-4">
               {/* Sidebar content here */}
               <li>
-                <a>Sidebar Item 1</a>
+                <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                    isActive ? "underline text-lime-600" : "text-black"
+                  }
+                >
+                  <FaHome className="inline mr-2" /> Home
+                </NavLink>
               </li>
               <li>
-                <a>Sidebar Item 2</a>
+                <NavLink
+                  to="/dashboard/overView"
+                  className={({ isActive }) =>
+                    isActive ? "underline text-lime-600" : "text-black"
+                  }
+                >
+                  <FaHome className="inline mr-2" /> Overview
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/dashboard/all-Plants"
+                  className={({ isActive }) =>
+                    isActive ? "underline text-lime-600" : "text-black"
+                  }
+                >
+                  <FaLeaf className="inline mr-2" /> All Plants
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/dashboard/my-Plants"
+                  className={({ isActive }) =>
+                    isActive ? "underline text-lime-600" : "text-black"
+                  }
+                >
+                  <FaSeedling className="inline mr-2" /> My Plants
+                </NavLink>
+              </li>
+              <li>
+                <NavLink
+                  to="/dashboard/add-Plant"
+                  className={({ isActive }) =>
+                    isActive ? "underline text-lime-600" : "text-black"
+                  }
+                >
+                  <FaPlusCircle className="inline mr-2" /> Add Plant
+                </NavLink>
               </li>
             </ul>
           </div>
