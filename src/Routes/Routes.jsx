@@ -10,6 +10,8 @@ import MyPlants from "../Pages/MyPlants/MyPlants";
 import PrivateRoute from "../Components/PrivateRoute/PrivateRoute";
 import ViewDetails from "../Pages/ViewDetails/ViewDetails";
 import UpdatePlants from "../Pages/UpadePlants/UpdatePlants";
+import Dashboard from "../Pages/Dashboard/Dashboard";
+import OverView from "../Pages/Dashboard/OverView/OverView";
 
 export const router = createBrowserRouter([
   {
@@ -90,6 +92,51 @@ export const router = createBrowserRouter([
           <div className=" flex items-center justify-center h-screen ">
             <span className="loading loading-bars loading-xl"></span>
           </div>
+        ),
+      },
+    ],
+  },
+  {
+    path: "/dashboard",
+    element: (
+      <PrivateRoute>
+        <Dashboard></Dashboard>
+      </PrivateRoute>
+    ),
+    children: [
+      {
+        index: true,
+        element: <OverView></OverView>,
+      },
+      {
+        path: "overView",
+        element: <OverView></OverView>,
+      },
+      {
+        path: "all-Plants",
+        element: <AllPlants></AllPlants>,
+        loader: () =>
+          fetch("https://plant-tracker-server-umber.vercel.app/plants"),
+        hydrateFallbackElement: (
+          <div className=" flex items-center justify-center h-screen ">
+            <span className="loading loading-bars loading-xl"></span>
+          </div>
+        ),
+      },
+      {
+        path: "my-Plants",
+        element: (
+          <PrivateRoute>
+            <MyPlants></MyPlants>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "add-Plant",
+        element: (
+          <PrivateRoute>
+            <AddPlant></AddPlant>
+          </PrivateRoute>
         ),
       },
     ],

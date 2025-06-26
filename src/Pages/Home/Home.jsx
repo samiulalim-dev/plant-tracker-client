@@ -4,6 +4,8 @@ import NewPlants from "../../Components/NewPlants/NewPlants";
 import QuickTips from "../../Components/QuickTips/QuickTips";
 import PopularPlant from "../../Components/PopularPlant/PopularPlant";
 
+import SeasonalPlantCare from "../../Components/SeasonalPlantCare/SeasonalPlantCare";
+
 const Home = () => {
   return (
     <div>
@@ -19,6 +21,9 @@ const Home = () => {
         </div>
         <div>
           <PopularPlant></PopularPlant>
+        </div>
+        <div>
+          <SeasonalPlantCare></SeasonalPlantCare>
         </div>
       </section>
     </div>
