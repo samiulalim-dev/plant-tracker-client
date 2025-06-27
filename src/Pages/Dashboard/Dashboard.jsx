@@ -2,7 +2,13 @@ import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import { Link, NavLink, Outlet } from "react-router";
 import logo from "../../assets/logos.png";
-import { FaHome, FaLeaf, FaSeedling, FaPlusCircle } from "react-icons/fa";
+import {
+  FaHome,
+  FaLeaf,
+  FaSeedling,
+  FaPlusCircle,
+  FaChartBar,
+} from "react-icons/fa";
 
 const Dashboard = () => {
   return (
@@ -126,7 +132,7 @@ const Dashboard = () => {
                     isActive ? "underline text-lime-600" : "text-black"
                   }
                 >
-                  <FaHome className="inline mr-2" /> Overview
+                  <FaChartBar className="inline mr-2" /> Overview
                 </NavLink>
               </li>
               <li>
@@ -197,7 +203,7 @@ const Dashboard = () => {
                 isActive ? "underline text-lime-600" : "text-black"
               }
             >
-              <FaHome className="inline mr-2" /> Overview
+              <FaChartBar className="inline mr-2" /> Overview
             </NavLink>
           </li>
           <li>
